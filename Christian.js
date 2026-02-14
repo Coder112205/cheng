@@ -1,4 +1,4 @@
-const colors = ["red", "black", "green", "yellow", "purple"];
+const colors = ["red", "orange", "green", "yellow", "purple"];
 
 function changeBackground() {
     const randomIndex = Math.floor(Math.random() * colors.length);
@@ -7,13 +7,4 @@ function changeBackground() {
     if (document.body.style.backgroundColor === 'black') {
         changeTextColor()
 }
-}
-
-function changeTextColor() {
-    const myDiv = document.getElementById('myDiv');
-    if (myDiv.style.backgroundColor === 'black') { 
-        myDiv.style.color = 'white'; 
-    }else{
-        myDiv.style.color = 'black';
-    }
 }
